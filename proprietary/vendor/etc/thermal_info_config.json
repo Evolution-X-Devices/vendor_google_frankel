@@ -1,5 +1,5 @@
 {
-    "Include": ["thermal_info_config_throttling.json", "thermal_info_config_charge.json", "thermal_info_config_stats.json"],
+    "Include": ["thermal_info_config_throttling.json", "thermal_info_config_charge.json", "thermal_info_config_stats.json", "thermal_info_config_earlywarnings.json"],
     "Sensors":[
         {
             "Name": "VIRTUAL-SKIN-PREDICTION-MODEL",
@@ -216,20 +216,12 @@
                     "CdevCeilingFrequency": [3052000, 1785000, 1785000, 1785000, 1785000, 1785000, 1785000]
                 },
                 {
-                    "CdevRequest": "cpufreq-cpu5",
+                    "CdevRequest": "big_and_big_mid",
                     "CdevWeightForPID": [1, 1, 1, 1, 1, 1, 1],
                     "MaxReleaseStep": 1,
-                    "MaxThrottleStep": 2,
+                    "MaxThrottleStep": 1,
                     "BindedPowerRail": "S2M_VDD_CPU2",
-                    "CdevCeilingFrequency": [3052000, 1785000, 1785000, 1785000, 1785000, 1785000, 1785000]
-                },
-                {
-                    "CdevRequest": "cpufreq-cpu7",
-                    "CdevWeightForPID": [1, 1, 1, 1, 1, 1, 1],
-                    "MaxReleaseStep": 1,
-                    "MaxThrottleStep": 2,
-                    "BindedPowerRail": "S2M_VDD_CPU2",
-                    "CdevCeilingFrequency": [4012000, 2073000, 2073000, 2073000, 2073000, 2073000, 2073000]
+                    "CdevCeiling": [0, 10, 10, 10, 10, 10, 10]
                 }
             ],
             "Profile": [
@@ -249,15 +241,9 @@
                            "Disabled":true
                         },
                         {
-                           "CdevRequest": "cpufreq-cpu5",
-                           "BindedPowerRail": "S2M_VDD_CPU2",
+                           "CdevRequest": "big_and_big_mid",
                            "MaxReleaseStep": 1,
-                           "Disabled":true
-                        },
-                        {
-                           "CdevRequest": "cpufreq-cpu7",
                            "BindedPowerRail": "S2M_VDD_CPU2",
-                           "MaxReleaseStep": 1,
                            "Disabled":true
                         }
                     ]

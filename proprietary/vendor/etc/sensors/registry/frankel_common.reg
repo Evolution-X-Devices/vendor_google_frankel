@@ -401,27 +401,27 @@
   single_tap_max_frame_count=31
   single_press_motion_tolerance=255
   single_press_max_touch_size=40
-  long_press_min_x=440
-  long_press_max_x=640
-  long_press_min_y=1679
-  long_press_max_y=1879
+  long_press_min_x=340
+  long_press_max_x=740
+  long_press_min_y=1579
+  long_press_max_y=1979
   long_press_min_frame_count=1
   long_press_motion_tolerance_inner=255
   long_press_max_touch_size=40
-  long_press_marginal_min_x=440
-  long_press_marginal_max_x=640
-  long_press_marginal_min_y=1679
-  long_press_marginal_max_y=1879
+  long_press_marginal_min_x=340
+  long_press_marginal_max_x=740
+  long_press_marginal_min_y=1579
+  long_press_marginal_max_y=1979
   long_press_monitor_channel_min_tx=6
   long_press_monitor_channel_max_tx=9
   long_press_monitor_channel_min_rx=24
   long_press_monitor_channel_max_rx=27
   long_press_min_node_count=8
   long_press_motion_tolerance_outer=545
-  long_press_int2_deassert_min_x=390
-  long_press_int2_deassert_max_x=690
-  long_press_int2_deassert_min_y=1629
-  long_press_int2_deassert_max_y=1929
+  long_press_int2_deassert_min_x=340
+  long_press_int2_deassert_max_x=740
+  long_press_int2_deassert_min_y=1579
+  long_press_int2_deassert_max_y=1979
   send_lptw_to_kernel=1
   super_resolution_auto_scale=1
 
@@ -491,4 +491,4 @@
 +/vsc/aad_prox
   # 0: Normal (fusion of Optical Prox with ultrasound presence detector)
   # 1: Optical Prox Passthrough (skips all other fusion logic)
-  mode=1
+  mode=0

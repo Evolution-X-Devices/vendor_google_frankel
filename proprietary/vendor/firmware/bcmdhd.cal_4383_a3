@@ -156,7 +156,7 @@ xtalfreq=59970
 mac_clkgating=1
 cckdigfilttype=4
 #papr params from 4388
-
+pcie_ext_l1_entry=1
 paprdis=1
 
 # energy detect threshold
